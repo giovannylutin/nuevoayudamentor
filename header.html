@@ -8,23 +8,42 @@
 <style>
     body{
         margin: 0px;
+        background-color: rgba(28, 165, 108, 0.671);
     }
     .head{
         background-color: rgba(28, 238, 168, 0.719);
         width: 100%;
         height: 80px;
     }
-    .head img{
+    .head__imagen--img{
         width: 200px;
         margin-top: 10px;
         margin-left: 20px;
     }
+    .head__menu{
+        color: white;
+    }
+    .head__menu--opciones li{
+        color: white;
+        align-self: block;
+    }
 </style>
 <body>
     <header class="head">
-        <div class="head__imagen"></div>
-        <div class="head__menu"></div>
-        <img src="https://raw.githubusercontent.com/platzi/PlatziVideo/feature/react/src/assets/static/logo-platzi-video-BW2.png" alt="">
+        <div class="head__imagen">
+            <img class="head__imagen--img" src="https://raw.githubusercontent.com/platzi/PlatziVideo/feature/react/src/assets/static/logo-platzi-video-BW2.png" alt="">
+        </div>
+
+        <div class="head__menu">
+            <span>menu</span>
+            <ul class="head__menu--opciones">
+                <li><a href="">ingreso</a></li>
+                <li><a href="">ingreso 2</a></li>
+            </ul>
+        </div>
     </header>
+    <article class="cuerpo">
+        <div class="cuerpo-buscador"></div>
+    </article>
 </body>
 </html>
