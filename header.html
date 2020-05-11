@@ -1,32 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>header</title>
+    <title>ayuda mentor</title>
 </head>
 <style>
     body{
         margin: 0px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         background-color: rgba(28, 165, 108, 0.671);
     }
-    .head{
-        background-color: rgba(28, 238, 168, 0.719);
+    .head{ /*estillos para el head*/
+        background-color: white;
         width: 100%;
-        height: 80px;
+        height: 70px;
         display: flex;
         justify-content: space-between;
+        box-shadow: 2px 5px 45px rgba(97, 97, 97, 0.50);
     }
-    .head__imagen--img{
+     .head__imagen--img{ /*estilos imagen progrentis*/
         width: 200px;
         margin-top: 10px;
         margin-left: 20px;
     }
-    .head__menu{
+    .head__menu{/*estilos para el input buscar*/
         color: white;
         margin-right: 30px;
+        width: 50%;
     }
+    .input{
+        width: 100%;
+        height: 30px;
+        border-radius: 50px;
+        outline: none;
+        border: 3px solid lightgrey;
+        text-align: center;
+        color: grey;
+        font-weight: bold;
+    }
+    .input::placeholder{
+      padding-left: 20px;
+      color: lightgrey;
+    }
+
+
     .head__menu--opciones{
         margin-top: 20px;
         display: flex;
@@ -34,7 +52,7 @@
     .head__menu--opciones img{
         height: 40px;
         width: 40px;
-        padding-right: 10px;
+        padding-right: 15px;
     }
     .head__menu ul{
         display: none;
@@ -59,23 +77,24 @@
     .head__menu a{
         text-decoration: none;
         color: white;
+        width: 50%;
     }
 </style>
 <body>
     <header class="head">
         <div class="head__imagen">
-            <img class="head__imagen--img" src="https://raw.githubusercontent.com/platzi/PlatziVideo/feature/react/src/assets/static/logo-platzi-video-BW2.png" alt="">
+            <img class="head__imagen--img" src="img/logo_progrentis_negro.png" alt="">
         </div>
-
         <div class="head__menu">
             <div class="head__menu--opciones">
-                <img src="img/iconuser.png" alt="">
-                <p>Menu</p>
+                <input class="input" type="text" placeholder="Buscar...">
+                <!-- <img src="img/iconuser.png" alt="">
+                <p>Menu</p> -->
             </div>
-            <ul>
+            <!-- <ul>
                 <li><a href="">ingreso</a></li>
                 <li><a href="">ingreso 2</a></li>
-            </ul>
+            </ul> -->
         </div>
     </header>
 
