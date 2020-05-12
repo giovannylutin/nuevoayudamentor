@@ -18,6 +18,7 @@
         display: flex;
         justify-content: space-between;
         box-shadow: 2px 5px 45px rgba(97, 97, 97, 0.50);
+        padding-bottom: 5px;
     }
      .head__imagen--img{ /*estilos imagen progrentis*/
         width: 200px;
@@ -29,8 +30,23 @@
         margin-right: 30px;
         width: 50%;
     }
+    .head__menu--opciones{
+        margin-top: 20px;
+        display: flex;
+    }
+    .btn{
+        margin-right: 10px;
+        background-color: black;
+        color: white;
+        border-color: black;
+        border-radius: 50px;
+        text-align: center;
+        padding-bottom: 0;
+        font-size: 12px;
+        width: 100px;
+    }
     .input{
-        width: 100%;
+        width: 80%;
         height: 30px;
         border-radius: 50px;
         outline: none;
@@ -38,22 +54,17 @@
         text-align: center;
         color: grey;
         font-weight: bold;
+        font-size: 13px;
     }
     .input::placeholder{
       padding-left: 20px;
       color: lightgrey;
     }
-
-
-    .head__menu--opciones{
-        margin-top: 20px;
-        display: flex;
-    }
-    .head__menu--opciones img{
-        height: 40px;
-        width: 40px;
+    /* .head__menu--opciones img{
+        height: 40%;
+        width: 40%;
         padding-right: 15px;
-    }
+    } */
     .head__menu ul{
         display: none;
         margin-right: 30px;
@@ -87,7 +98,8 @@
         </div>
         <div class="head__menu">
             <div class="head__menu--opciones">
-                <input class="input" type="text" placeholder="Buscar...">
+                <button class="btn">Buscar</button>
+                <input class="input" type="text" placeholder="¡Escribe tu Consulta Aqui!">
                 <!-- <img src="img/iconuser.png" alt="">
                 <p>Menu</p> -->
             </div>
