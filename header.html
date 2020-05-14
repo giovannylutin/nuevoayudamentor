@@ -43,6 +43,7 @@
         padding-bottom: 0;
         font-size: 12px;
         width: 100px;
+        outline: none;
     }
     .input{
         width: 80%;
@@ -63,21 +64,51 @@
         display: flex;
     }
     .contenedor__opciones{
-        background-color: aquamarine;
-        width: 12rem;
+        /* background-color: aquamarine; */
+        background-color: lightgray;
+        width: 13rem;
+        /* outline:2px solid aquamarine; */
+    }
+    .contenedor__opciones--titulo{
+        background-color: red;
+        border-top-right-radius:20px ;
+        border-bottom-left-radius:20px ;
+        padding: 2px;
+        border: 3px solid yellow;
+    }
+    .contenedor__opciones--titulo h4{
+        color: white;
+        margin-left: 2rem;
+        
     }
     .contenedor__contenido{
-        background-color: coral;
+        /* background-color: coral; */
         height: 85vh;
         width: 100%;
+        /* outline: 2px solid coral; */
+    }
+    .contenedor_contendio--titulo{
+        /* outline: 2px solid black; */
+        background-color:darkgrey;
+        text-align: center;
+        border-radius: 20px;
+        width: 95%;
+        height: 40px;
+        margin: auto;
+    }
+    .contenedor_contendio--titulo h1{
+        padding-top: 10px;
+        color: white;
+        font-size: 100%;  
     }
     .contenedor_contendio--informacion{
         background-color: white;
         border-radius: 20px;
         width: 95%;
-        height: 80%;
+        height: 85%;
         margin: auto;
         margin-top: 15px;
+        box-shadow: 2px 5px 45px rgba(97, 97, 97, 0.50);
     }
     /* .head__menu--opciones img{
         height: 40%;
@@ -129,7 +160,9 @@
         </div>
     </header>
     <section class="contenedor">
-        <aside class="contenedor__opciones">opciones</aside>
+        <aside class="contenedor__opciones">
+            <div class="contenedor__opciones--titulo"><h4>Opciones</h4></div>
+        </aside>
         <article class="contenedor__contenido">
             <div class="contenedor_contendio--titulo"><h1>Bienvenido a nuestro panel de ayuda</h1></div>
             <div class="contenedor_contendio--informacion"></div>
