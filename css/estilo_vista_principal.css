@@ -124,7 +124,8 @@ body{
     margin: auto;
     padding: 10px;
     padding-bottom: 20px;
-    box-shadow: 7px 26px 58px rgba(97, 97, 97, 0.50);
+    -webkit-box-shadow: 7px 26px 58px rgba(97, 97, 97, 0.50);
+            box-shadow: 7px 26px 58px rgba(97, 97, 97, 0.50);
     border-radius: 20px;
     /* outline: 2px solid blueviolet; */
     background-image: -webkit-linear-gradient(top left,orange, rgb(233, 233, 27));
@@ -176,7 +177,8 @@ body{
     margin: auto;
     padding: 10px;
     padding-bottom: 20px;
-    box-shadow: 7px 26px 58px rgba(97, 97, 97, 0.50);
+    -webkit-box-shadow: 7px 26px 58px rgba(97, 97, 97, 0.50);
+            box-shadow: 7px 26px 58px rgba(97, 97, 97, 0.50);
     border-radius: 20px;
     /* outline: 2px solid black; */   
 }
@@ -261,7 +263,6 @@ body{
     width: 30%;
     outline: 2px solid blue;
 }
-
 /*  */
 
 
