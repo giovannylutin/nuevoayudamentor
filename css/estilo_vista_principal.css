@@ -279,6 +279,269 @@ body{
     outline: 2px solid blue;
 }
 /*  */
+body{
+    margin: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.head{ /*estillos para el head*/
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    box-shadow: 2px 5px 45px rgba(97, 97, 97, 0.50);
+    padding-bottom: 5px;
+}
+ .head__imagen--img{ /*estilos imagen progrentis*/
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.head__menu{/*estilos para el input buscar*/
+    color: white;
+    margin-right: 30px;
+    width: 50%;
+}
+.head__menu--opciones{
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+/* .btn{
+    margin-right: 10px;
+    background-color: black;
+    color: white;
+    border-color: black;
+    border-radius: 50px;
+    text-align: center;
+    padding-bottom: 0;
+    font-size: 12px;
+    width: 100px;
+    outline: none;
+}
+.input{
+    width: 80%;
+    height: 30px;
+    border-radius: 50px;
+    outline: none;
+    border: 3px solid lightgrey;
+    text-align: center;
+    color: grey;
+    font-weight: bold;
+    font-size: 13px;
+} */
+.input::-webkit-input-placeholder{
+  padding-left: 20px;
+  color: #212F3C;
+}
+.input::-moz-placeholder{
+  padding-left: 20px;
+  color: #212F3C;
+}
+.input:-ms-input-placeholder{
+  padding-left: 20px;
+  color: #212F3C;
+}
+.input::placeholder{
+  padding-left: 20px;
+  color: #212F3C;
+}
+.contenedor{/*contenedor padre principal*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    /* outline: 2px solid black; */
+}
+.contenedor__informacion{/*contenedor secundario de la barra menu opciones*/
+    background-color: lightgray;
+    width: 100%;
+    height: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    
+    /* outline:2px solid aquamarine; */
+}
+.contenedor__informacion--saludo{
+    width: 50%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    /* outline: 2px solid blue; */
+}
+.contenedor__informacion--busqueda{
+    width: 50%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    /* outline: 2px solid red; */
+}
+
+.presentacion__titulo{
+    color: white;
+    text-align: center;
+    width: 90%;
+    height: 81%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: auto;
+    padding: 10px;
+    padding-bottom: 20px;
+    box-shadow: 7px 26px 58px rgba(97, 97, 97, 0.50);
+    border-radius: 20px;
+    /* outline: 2px solid blueviolet; */
+    background-image: -webkit-linear-gradient(top left,orange, rgb(233, 233, 27));
+    background-image: linear-gradient(to bottom right,orange, rgb(233, 233, 27)); 
+}
+.presentacion__imagen{
+    padding-top: 12px;
+    padding-left: 12px;
+    height: 165px;
+    width:145px;
+    /* outline: 2px solid blueviolet; */
+}.presentacion__mensaje{
+    width: 60%;
+    margin-left: 30px;    
+}
+.presentacion__mensaje h1{
+    margin-bottom: 0px;
+    font-size:4vw;
+    -webkit-margin-before: 0.4em;
+            margin-block-start: 0.4em;
+}
+
+.presentacion__mensaje h3{
+    margin-top: 0px;
+    margin-bottom: 2px;
+    
+}
+.presentacion__mensaje h5{
+    margin-top: 0px;
+    font-size:2vw;
+    font-weight: bold;
+}
+/* incia estilos del buscador */
+.opcion__busqueda{
+    background-image: -webkit-linear-gradient(top left, rgb(233, 233, 27),orange);
+    background-image: linear-gradient(to bottom right, rgb(233, 233, 27),orange); 
+    width: 90%;
+    height: 81%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+    padding: 10px;
+    padding-bottom: 20px;
+    box-shadow: 7px 26px 58px rgba(97, 97, 97, 0.50);
+    border-radius: 20px;
+    /* outline: 2px solid black; */   
+}
+.opcion__busqueda--buscar{
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 60px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.opcion__busqueda--buscar button{
+    all: unset;
+    background-color: #283747;
+    color: white;
+    border-color:none;
+    border-radius: 50px;
+    text-align: center;
+    padding-bottom: 0;
+    font-size: 15px;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+    
+}
+.opcion__busqueda--buscar:hover button , button :hover{
+    background-color: black;
+    color: white;
+}
+
+.opcion__busqueda input{
+    width: 80%;
+    height: 30px;
+    border-radius: 50px;
+    margin-bottom: 15px;
+    outline: none;
+    border: 3px solid #283747;
+    text-align: center;
+    color:#283747 ;
+    font-weight: bold;
+    font-size: 15px;
+    outline: inherit;
+}
+.contenedor__contenido{/*contenido area principal*/
+    /* background-color: coral; */
+    height: 80vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* outline: 2px solid red; */
+      
+}
+.contenedor_contendio--informacion{
+    background-color: white;
+    border-radius: 20px;
+    width: 96%;
+    height: 50%;
+    margin: auto;
+    margin-top: 15px;
+    box-shadow: 2px 5px 45px rgba(97, 84, 84, 0.5);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;  
+     /* outline: 2px solid black; */
+}
+.contenedor__frecuentes{
+    width: 70%;
+    outline: 2px solid magenta;
+}
+.contenedor__recursos{
+    width: 30%;
+    outline: 2px solid blue;
+}
+
+/*  */
 
 
 
