@@ -1,5 +1,12 @@
 
 /*  */
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 body{
     margin: 0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -14,7 +21,8 @@ body{
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    box-shadow: 2px 5px 45px rgba(97, 97, 97, 0.50);
+    -webkit-box-shadow: 2px 5px 45px rgba(97, 97, 97, 0.50);
+            box-shadow: 2px 5px 45px rgba(97, 97, 97, 0.50);
     padding-bottom: 5px;
 }
  .head__imagen--img{ /*estilos imagen progrentis*/
@@ -65,6 +73,10 @@ body{
   color: #212F3C;
 }
 .input:-ms-input-placeholder{
+  padding-left: 20px;
+  color: #212F3C;
+}
+.input::-ms-input-placeholder{
   padding-left: 20px;
   color: #212F3C;
 }
@@ -128,7 +140,8 @@ body{
             box-shadow: 7px 26px 58px rgba(97, 97, 97, 0.50);
     border-radius: 20px;
     /* outline: 2px solid blueviolet; */
-    background-image: -webkit-linear-gradient(top left,orange, rgb(233, 233, 27));
+    background-image: -webkit-gradient(linear,left top, right bottom,from(orange), to(rgb(233, 233, 27)));
+    background-image: -o-linear-gradient(top left,orange, rgb(233, 233, 27));
     background-image: linear-gradient(to bottom right,orange, rgb(233, 233, 27)); 
 }
 .presentacion__imagen{
@@ -160,7 +173,8 @@ body{
 }
 /* incia estilos del buscador */
 .opcion__busqueda{
-    background-image: -webkit-linear-gradient(top left, rgb(233, 233, 27),orange);
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgb(233, 233, 27)),to(orange));
+    background-image: -o-linear-gradient(top left, rgb(233, 233, 27),orange);
     background-image: linear-gradient(to bottom right, rgb(233, 233, 27),orange); 
     width: 90%;
     height: 81%;
@@ -245,7 +259,8 @@ body{
     height: 50%;
     margin: auto;
     margin-top: 15px;
-    box-shadow: 2px 5px 45px rgba(97, 84, 84, 0.5);
+    -webkit-box-shadow: 2px 5px 45px rgba(97, 84, 84, 0.5);
+            box-shadow: 2px 5px 45px rgba(97, 84, 84, 0.5);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
