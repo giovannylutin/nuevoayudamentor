@@ -196,7 +196,36 @@ body{
 }
 .contenedor__frecuentes{
     width: 70%;
-    outline: 2px solid magenta;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* outline: 2px solid magenta; */
+}
+.contenedor__frecuentesfAQS{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 75%;
+    margin-left: 10%;
+    /* outline: 2px solid red; */
+}
+.contenedor__frecuentesfAQS--titulo{
+    width: 100%;
+    height: 40px;
+    border-top-left-radius:20px ;
+    border-top-right-radius:20px ;
+    background-color: slategrey;
+    color: white;
+}
+.contenedor__frecuentesfAQS--titulo h1{
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+.contenedor__frecuentesfAQS--preguntas{
+    background-color: lightgray;
 }
 .contenedor__recursos{
     width: 30%;

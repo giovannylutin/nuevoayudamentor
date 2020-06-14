@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo_vista_principal.css">
-    <title>ayuda mentor</title>
+    <title>Ayuda Mentor</title>
 </head>
 <body>
     <header class="head">
@@ -24,15 +24,15 @@
             </ul> -->
         </div>
     </header>
-    <section class="contenedor"><!--se necesita un titulo por ser article-->
-        <section class="contenedor__informacion">
-            <div class="contenedor__informacion--saludo">
+    <section class="contenedor" id="app"><!--se necesita un titulo por ser article-->
+        <section class="contenedor__informacion" id="panel_1">
+            <div class="contenedor__informacion--saludo" id="panel_1_saludo">
                 <div class="presentacion__titulo">
                     <img class="presentacion__imagen" src="img/engranaje.png" alt="">
                     <div class="presentacion__mensaje">
-                        <h1>BIENVENIDO</h1>
-                    <h3>a nuestro panel de ayuda</h3>
-                    <h5> Colegio nuevo amacer II</h5>
+                        <h1>{{ saludo }}</h1>
+                        <h3>a nuestro panel de ayuda</h3>
+                        <h5> {{ colegio }}</h5>
                     </div>
                 </div>
             </div>
@@ -47,10 +47,27 @@
             <!-- <div class="contenedor__opciones--titulo"><h4>Opciones</h4></div> -->
         </section>
 
-        <section class="contenedor__contenido">
+        <section class="contenedor__contenido" id="app_contenido">
             <!-- <div class="contenedor_contendio--titulo"><h4>Bienvenido a nuestro panel de ayuda</h4></div> -->
-            <div class="contenedor_contendio--informacion">
-                <div class="contenedor__frecuentes">frecuentes</div>
+            <div class="contenedor_contendio--informacion" id="panel_contenedor">
+                <div class="contenedor__frecuentes" id="panel_contenedor_1">
+                    <div class="contenedor__frecuentesfAQS">
+                        <div class="contenedor__frecuentesfAQS--titulo">
+                            <h1>FAQS</h1>
+                        </div>
+                        <div class="contenedor__frecuentesfAQS--preguntas">
+                            <ul>
+                                <li>como empiezo</li>
+                                <li>como empiezo</li>
+                                <li>como empiezo</li>
+                                <li>como empiezo</li>
+                                <li>como empiezo</li>
+                                <li>como empiezo</li>
+                                <li>como empiezo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <div class="contenedor__recursos">recursos</div>
                 <!-- <div class="presentacion">
                     <div class="presentacion__titulo">
@@ -83,5 +100,8 @@
             </h5>
         </div> -->
     </footer>
+<script src="js/vue_1.js"></script>
+<script src="js/mi_vuejs.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
 </body>
 </html>
