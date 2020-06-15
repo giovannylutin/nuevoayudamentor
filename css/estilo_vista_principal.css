@@ -272,11 +272,11 @@ body{
 }
 .contenedor__frecuentes{
     width: 70%;
-    outline: 2px solid magenta;
+    /* outline: 2px solid magenta; */
 }
 .contenedor__recursos{
     width: 30%;
-    outline: 2px solid blue;
+    /* outline: 2px solid blue; */
 }
 /*  */
 body{
@@ -517,9 +517,9 @@ body{
 }
 .contenedor_contendio--informacion{
     background-color: white;
-    border-radius: 20px;
-    width: 96%;
-    height: 50%;
+    /* border-radius: 20px; */
+    width: 100%;
+    height: 100%;
     margin: auto;
     margin-top: 15px;
     box-shadow: 2px 5px 45px rgba(97, 84, 84, 0.5);
@@ -567,10 +567,52 @@ body{
 }
 .contenedor__recursos{
     width: 30%;
-    outline: 2px solid blue;
+    /* outline: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    /* background-color: lghtgray; */
+}
+.contenedor__recursosfichaTC{
+    width: 100%;
+    height: 30%;
+    border: 3px solid #283747;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* outline: 2px solid black; */
+}
+.contenedor__recursosfichaTC img{
+    height: 79%;
+    width: 19%;
+}
+.contenedor__recursosfichaTC--btn{
+    all: unset;
+    background-color: orange;
+    color: white;
+    border-color:none;
+    border-radius: 50px;
+    text-align: center;
+    padding-bottom: 0;
+    font-size: 30px;
+    font-weight: bold;
+    width: 83%;
+    height: 47%;
+    margin-top: 25px;
+    box-shadow: 2px 5px 45px rgba(97, 97, 97, 0.50);
+    
 }
 
-/*  */
+.contenedor__recursos--pendiente{
+    width: 90%;
+    height: 40%;
+    outline: 2px solid red;
+}
+
+
+
 
 
 
