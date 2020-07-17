@@ -16,9 +16,15 @@ body{
     /* outline: 2px solid red; */
 }
  .head__imagen--img{ /*estilos imagen progrentis*/
+<<<<<<< HEAD
     width: 20rem;
     margin-top: 10px;
     margin-left: 20px;
+=======
+    width: 18rem;
+    margin-top: 12px;
+    margin-left: 22px;
+>>>>>>> master
 }
 /* .head__menu{ estilos para el imput buscar 
     color: white;
