@@ -12,9 +12,9 @@ body{
     padding-bottom: 5px;
 }
  .head__imagen--img{ /*estilos imagen progrentis*/
-    width: 22rem;
-    margin-top: 10px;
-    margin-left: 20px;
+    width: 18rem;
+    margin-top: 12px;
+    margin-left: 22px;
 }
 /* .head__menu{ estilos para el imput buscar 
     color: white;
